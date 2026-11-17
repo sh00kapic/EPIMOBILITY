@@ -103,7 +103,7 @@ function DisplayMap({ expanded, onToggle, places, topInset }: { expanded: boolea
 }
 
 export default function ExploreScreen() {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const [view, setView] = useState<'map' | 'list'>('map');
   const [query, setQuery] = useState('');
   const visible = useMemo(
